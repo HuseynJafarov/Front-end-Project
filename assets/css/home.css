@@ -384,14 +384,20 @@ main #intro-slider .swiper .swiper-slide button {
 #tab-menu {
   background-color: black;
   height: 220px;
+  margin-top: 175px;
 }
-#tab-menu h2 {
+#tab-menu .my-container {
+  width: 95%;
+  margin: auto;
+}
+#tab-menu .my-container h2 {
+  margin-top: 50px;
   color: white;
 }
-#tab-menu .tab {
+#tab-menu .my-container .tab {
   overflow: hidden;
 }
-#tab-menu .tab button {
+#tab-menu .my-container .tab button {
   background-color: inherit;
   color: white;
   float: left;
@@ -402,19 +408,90 @@ main #intro-slider .swiper .swiper-slide button {
   transition: 0.3s;
   font-size: 17px;
 }
-#tab-menu .tab button:hover {
+#tab-menu .my-container .tab button:hover {
   background-color: white;
   color: black;
 }
-#tab-menu .tab button.active {
+#tab-menu .my-container .tab button.active {
   background-color: white;
   color: black;
 }
-#tab-menu .tabcontent {
+#tab-menu .my-container .tabcontent {
   display: none;
   padding: 6px 12px;
   border-top: none;
   color: white;
+}
+#tab-menu .my-container .swiper {
+  width: 100%;
+  height: 100%;
+}
+#tab-menu .my-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tab-menu .my-container .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#tab-menu .my-container .swiper a {
+  margin-top: -905px;
+  margin-right: 265px;
+}
+#tab-menu .my-container .money {
+  background-color: #fff !important;
+  position: absolute;
+  bottom: 153px;
+  border-radius: 4px;
+}
+#tab-menu .my-container .laptop {
+  color: black;
+  font-weight: 100;
+  margin-right: 197px;
+  margin-top: -20px;
+}
+#tab-menu .my-container .staars {
+  position: absolute;
+  bottom: 60px;
+  left: 30px;
+  color: yellow;
+  font-size: 16px;
+}
+#tab-menu .my-container .line {
+  border-top: 1px solid #eee;
+  margin-top: 38px;
+  width: 337px;
+}
+#tab-menu .my-container .heart_icon {
+  color: gray;
+  margin-right: 298px;
+  margin-top: 10px;
+}
+#tab-menu .my-container .eye_icon {
+  color: gray;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+}
+#tab-menu .my-container .shop-adds {
+  background-color: #283593;
+  width: 58px;
+  height: 61px;
+  position: absolute;
+  border-radius: 50%;
+  padding-left: 1px;
+  padding-top: 18px;
+  color: white;
+  font-size: 23px;
+  top: 408px;
+  left: 270px;
 }
 
 @media only screen and (max-width: 840px) {

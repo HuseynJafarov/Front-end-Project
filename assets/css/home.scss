@@ -432,38 +432,141 @@ main #intro-slider {
 #tab-menu {
   background-color: black;
   height: 220px;
-  h2 {
-    color: white;
-  }
-  .tab {
-    overflow: hidden;
-  }
-  .tab button {
-    background-color: inherit;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-  }
-  .tab button:hover {
-    background-color: white;
-    color: black;
-  }
-  .tab button.active {
-    background-color: white;
-    color: black;
-  }
+  margin-top: 175px;
 
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border-top: none;
-    color: white;
-    
+  .my-container {
+    width: 95%;
+    margin: auto;
+    h2 {
+      margin-top: 50px;
+      color: white;
+    }
+
+    .tab {
+      overflow: hidden;
+    }
+
+    .tab button {
+      background-color: inherit;
+      color: white;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    .tab button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .tab button.active {
+      background-color: white;
+      color: black;
+    }
+
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border-top: none;
+      color: white;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      a {
+        margin-top: -905px;
+        margin-right: 265px;
+      }
+    }
+
+    .money {
+      background-color: #fff !important;
+      position: absolute;
+      bottom: 153px;
+      border-radius: 4px;
+    }
+
+    .laptop {
+      color: black;
+      font-weight: 100;
+      margin-right: 197px;
+      margin-top: -20px;
+    }
+
+    .staars {
+      position: absolute;
+      bottom: 60px;
+      left: 30px;
+      color: yellow;
+      font-size: 16px;
+    }
+
+    .line {
+      border-top: 1px solid #eee;
+      margin-top: 38px;
+      width: 337px;
+    }
+
+    .heart_icon {
+      color: gray;
+      margin-right: 298px;
+      margin-top: 10px;
+    }
+
+    .eye_icon {
+      color: gray;
+      position: absolute;
+      right: 30px;
+      bottom: 20px;
+    }
+
+    .shop-adds {
+      background-color: #283593;
+      width: 58px;
+      height: 61px;
+      position: absolute;
+      border-radius: 50%;
+      padding-left: 1px;
+      padding-top: 18px;
+      color: white;
+      font-size: 23px;
+      top: 408px;
+      left: 270px;
+    }
   }
 }
 
