@@ -1,0 +1,498 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.my-container {
+  width: 95%;
+  position: relative;
+}
+
+#top-side {
+  width: 100%;
+  height: 100px;
+  background-color: #333f98;
+}
+#top-side .container-fluid {
+  width: 95%;
+}
+#top-side .language {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+#top-side .language .button1 {
+  border-radius: 0px;
+  background-color: #333f98;
+  border: 0px;
+}
+#top-side .country {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+#top-side .country .button2 {
+  border-radius: 0px;
+  background-color: #333f98;
+  border: 0px;
+}
+#top-side .country ul img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: relative;
+  left: 10px;
+}
+#top-side .country ul li {
+  margin: 6px;
+}
+#top-side .country .usa-flex {
+  display: flex;
+}
+#top-side .country .nzd-flex {
+  display: flex;
+}
+#top-side .country .gmd-flex {
+  display: flex;
+}
+#top-side .country .ilr-flex {
+  display: flex;
+}
+#top-side .country .eur-flex {
+  display: flex;
+}
+#top-side .country .inr-flex {
+  display: flex;
+}
+#top-side .logo {
+  display: flex;
+  justify-content: center;
+}
+#top-side .logo img {
+  margin-top: 36px;
+}
+#top-side .icons {
+  float: right;
+}
+#top-side .icons .basket {
+  background-color: #ff5722;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+#top-side .icons .basket i {
+  color: white;
+  margin-left: 10px;
+}
+#top-side .icons .heart {
+  background-color: #ff5722;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+#top-side .icons .heart i {
+  margin-left: 12px;
+  color: white;
+}
+#top-side .icons .profile {
+  margin-top: 23px;
+}
+#top-side .icons .profile .button3 {
+  background-color: #333f98;
+  border: 0px;
+}
+#top-side .icons .profile img {
+  border-radius: 50%;
+  width: 45px;
+  height: 42px;
+  position: relative;
+  left: 2px;
+}
+#top-side .icons .profile .profile-i {
+  display: flex;
+}
+#top-side .icons .profile .account-i {
+  display: flex;
+}
+#top-side .icons .profile .message-i {
+  display: flex;
+}
+#top-side .icons .profile .logout-i {
+  display: flex;
+}
+#top-side .icons .profile i {
+  position: relative;
+  left: 10px;
+  top: 8px;
+  font-size: 20px;
+}
+
+#nav-area {
+  background-color: #283593;
+}
+#nav-area .my-container {
+  width: 95%;
+  margin: auto;
+}
+#nav-area .my-container nav {
+  display: flex;
+  justify-content: center;
+}
+#nav-area .my-container .btn-navbar {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+#nav-area .my-container .btn-navbar .admin {
+  background-color: #ff5722;
+  width: 115px;
+  height: 45px;
+  padding-top: 10px;
+}
+#nav-area .my-container .btn-navbar .admin .admin-nav {
+  color: white;
+  margin-left: 5px;
+  text-decoration: none;
+}
+#nav-area .my-container .btn-navbar li {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  margin-right: 25px;
+}
+#nav-area .my-container .btn-navbar li .nav-a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+#nav-area .my-container .btn-navbar li .nav-a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -10px;
+  left: 0px;
+  background-color: #ff5722;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0, 0);
+  visibility: hidden;
+}
+#nav-area .my-container .btn-navbar li:hover .submenu {
+  height: 200px;
+}
+#nav-area .my-container .btn-navbar li:hover .categori {
+  height: 320px;
+  width: 800px;
+}
+#nav-area .my-container .btn-navbar li:hover a::before {
+  visibility: visible;
+  transform: scale(1, 1);
+}
+#nav-area .my-container .btn-navbar li .submenu {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 150px;
+  line-height: 40px;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+  z-index: 2;
+}
+#nav-area .my-container .btn-navbar li .submenu a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+#nav-area .my-container .btn-navbar li .categori {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 0;
+  line-height: 30px;
+  text-align: left;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.2s;
+  text-align: left;
+  margin-left: -200px;
+  border-radius: 10px;
+  z-index: 2;
+}
+#nav-area .my-container .btn-navbar li .categori table td {
+  border: none;
+}
+#nav-area .my-container .btn-navbar li .categori table th {
+  font-size: 17px;
+  color: #283593;
+}
+#nav-area .my-container .btn-navbar li .categori table th:hover {
+  color: #000;
+}
+#nav-area .my-container .btn-navbar h1 {
+  text-align: center;
+  font-family: satisfy;
+  font-weight: 300;
+}
+#nav-area .icon {
+  width: 56px;
+  height: 56px;
+  background-color: #ff5722;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  right: 0;
+  margin-top: 20px;
+  position: absolute;
+  z-index: 1;
+}
+#nav-area .icon i {
+  color: white;
+}
+
+#scroll-section {
+  background-color: #283593;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  display: block;
+  transition: 0.5s;
+}
+#scroll-section .my-container {
+  width: 97%;
+  height: 50px;
+  background-color: #283593;
+  margin-left: 23px;
+}
+#scroll-section img {
+  padding-top: 8px;
+}
+#scroll-section .inActive {
+  display: none;
+}
+#scroll-section nav {
+  position: absolute;
+  right: 0;
+}
+#scroll-section .btn {
+  display: flex;
+  margin-top: 3px;
+}
+#scroll-section .btn li {
+  list-style: none;
+  margin-right: 15px;
+}
+#scroll-section .btn li:hover .home {
+  height: 130px;
+  width: 200px;
+}
+#scroll-section .btn li:hover .home li {
+  text-align: left;
+}
+#scroll-section .btn li:hover .shop {
+  height: 170px;
+  width: 200px;
+}
+#scroll-section .btn li:hover .categories {
+  height: 270px;
+  width: 1000px;
+}
+#scroll-section .btn li:hover .categories li {
+  text-align: left;
+}
+#scroll-section .btn li:hover a::before {
+  visibility: visible;
+  transform: scale(1, 1);
+}
+#scroll-section .btn li .home {
+  height: 130px;
+  width: 200px;
+}
+#scroll-section .btn li .shop {
+  height: 170px;
+  width: 200px;
+}
+#scroll-section .btn li .categories {
+  position: absolute;
+  right: 0;
+  height: 270px;
+  width: 1000px;
+  display: flex;
+  gap: 150px;
+  text-align: left;
+}
+#scroll-section .btn li .submenu {
+  overflow: hidden;
+  position: absolute;
+  top: 57px;
+  background-color: whitesmoke;
+  height: 0;
+  line-height: 40px;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  border-radius: 5px;
+  z-index: 2;
+}
+#scroll-section .btn li .submenu > li {
+  display: block;
+  text-align: left;
+}
+#scroll-section .btn li .submenu a {
+  color: black;
+  margin-top: 20px;
+  font-size: 16px;
+  text-decoration: none;
+}
+#scroll-section .btn li .submenu a:hover {
+  text-decoration: none;
+}
+#scroll-section .btn li .submenu .product1 {
+  padding-top: 20px;
+}
+#scroll-section .btn li .submenu .product1 h5 {
+  text-align: left;
+}
+#scroll-section .btn li .hov {
+  font-size: 18px;
+  color: white;
+  display: block;
+  padding: 0 7px 0 7px;
+  margin: 0 0 10px;
+  text-decoration: none;
+  position: relative;
+}
+#scroll-section .btn li .hov::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: -20px;
+  left: 0px;
+  background-color: orange;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0, 0);
+  visibility: hidden;
+}
+
+#singin {
+  display: flex;
+  position: relative;
+}
+#singin .img {
+  padding-left: 100px;
+}
+#singin .img img {
+  width: 600px;
+  height: 600px;
+}
+#singin .register {
+  padding-top: 20px;
+  box-shadow: 1px 1px gray;
+  border-radius: 5px;
+  position: absolute;
+  top: 130px;
+  right: 350px;
+  width: 500px;
+  height: 400px;
+  background-color: white;
+}
+#singin .register p {
+  margin-top: 25px;
+}
+#singin .register p a {
+  text-decoration: none;
+  color: #000;
+}
+#singin .register p a:hover {
+  color: #ff5722;
+}
+#singin .register button {
+  margin-top: 25px;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  background-color: #ff5722 !important;
+}
+#singin .register .input {
+  display: flex;
+  flex-direction: column;
+}
+#singin .register .input input {
+  border: none;
+  border-bottom: 1px gray solid;
+  outline: none;
+  margin-top: 25px;
+  font-size: 15px;
+}
+#singin .register .remember {
+  padding-top: 20px;
+}
+#singin .register .remember label {
+  margin-left: 15px;
+}
+#singin .register .remember input {
+  zoom: 1;
+  transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  -o-transform: scale(2);
+  -moz-transform: scale(2);
+  transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+}
+#singin .register .remember a {
+  padding-top: 10px;
+  float: right;
+  text-decoration: none;
+}
+
+#site-about {
+  background-color: black;
+}
+#site-about .my-container {
+  width: 97%;
+  height: 400px;
+  margin: auto;
+  background-color: black;
+}
+#site-about .about p:hover {
+  cursor: pointer;
+  color: orange;
+}
+#site-about h6,
+#site-about p {
+  transition: 0.3s;
+  margin-left: 40px;
+  margin-top: 30px;
+  color: white;
+}
+#site-about span {
+  float: right;
+  color: white;
+}/*# sourceMappingURL=login.css.map */
