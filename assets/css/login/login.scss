@@ -23,7 +23,11 @@
     display: flex;
     align-items: center;
     margin-top: 30px;
-
+    .dropdown-item {
+      img {
+        width: 35px;
+      }
+    }
     .button1 {
       border-radius: 0px;
       background-color: #333f98;
@@ -465,7 +469,6 @@
   .img {
     padding-left: 100px;
     img {
-
       width: 600px;
       height: 600px;
     }
@@ -500,23 +503,55 @@
     }
 
     .input {
-      input {
-        border: none;
-        border-bottom: 1px gray solid;
-        outline: none;
-        margin-top: 25px;
-        font-size: 15px;
+      label {
+        margin-left: 10px;
+        margin-top: 15px;
+        position: relative;
+        display: inline-block;
+
+        span {
+          padding: 10px;
+          pointer-events: none;
+          position: absolute;
+          left: 0;
+          top: 0;
+          transition: 0.2s;
+          transition-timing-function: ease;
+          transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+          opacity: 0.5;
+        }
+
+        input {
+          border: none;
+          border-bottom: 1px gray solid;
+          outline: none;
+          padding: 10px;
+          
+        }
+
+        input:focus + span,
+        input:not(:placeholder-shown) + span {
+          opacity: 1;
+          transform: scale(0.75) translateY(-100%) translateX(-30px);
+        }
+
+        /* For IE Browsers*/
+        input:focus + span,
+        input:not(:-ms-input-placeholder) + span {
+          opacity: 1;
+          transform: scale(0.75) translateY(-100%) translateX(-30px);
+        }
       }
 
       display: flex;
       flex-direction: column;
     }
     .remember {
-        padding-top: 20px;
-        label{
-            margin-left: 15px;
-        }
-         input {
+      padding-top: 20px;
+      label {
+        margin-left: 15px;
+      }
+      input {
         zoom: 1;
         transform: scale(2);
         -ms-transform: scale(2);
@@ -528,13 +563,12 @@
         -webkit-transform-origin: 0 0;
         -o-transform-origin: 0 0;
         -moz-transform-origin: 0 0;
-         }
-        a {
-            padding-top: 10px;
-            float: right;
-            text-decoration: none;
-        }
-      
+      }
+      a {
+        padding-top: 10px;
+        float: right;
+        text-decoration: none;
+      }
     }
   }
 }

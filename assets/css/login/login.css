@@ -23,6 +23,9 @@
   align-items: center;
   margin-top: 30px;
 }
+#top-side .language .dropdown-item img {
+  width: 35px;
+}
 #top-side .language .button1 {
   border-radius: 0px;
   background-color: #333f98;
@@ -440,12 +443,47 @@
   display: flex;
   flex-direction: column;
 }
-#singin .register .input input {
+#singin .register .input label {
+  margin-left: 10px;
+  margin-top: 15px;
+  position: relative;
+  display: inline-block;
+  /* For IE Browsers*/
+}
+#singin .register .input label span {
+  padding: 10px;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.2s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  opacity: 0.5;
+}
+#singin .register .input label input {
   border: none;
   border-bottom: 1px gray solid;
   outline: none;
-  margin-top: 25px;
-  font-size: 15px;
+  padding: 10px;
+}
+#singin .register .input label input:not(:-moz-placeholder-shown) + span {
+  opacity: 1;
+  transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+#singin .register .input label input:not(:-ms-input-placeholder) + span {
+  opacity: 1;
+  transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+#singin .register .input label input:focus + span,
+#singin .register .input label input:not(:placeholder-shown) + span {
+  opacity: 1;
+  transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+#singin .register .input label input:focus + span,
+#singin .register .input label input:not(:-ms-input-placeholder) + span {
+  opacity: 1;
+  transform: scale(0.75) translateY(-100%) translateX(-30px);
 }
 #singin .register .remember {
   padding-top: 20px;

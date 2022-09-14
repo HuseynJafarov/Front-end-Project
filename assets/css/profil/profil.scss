@@ -23,9 +23,9 @@
     display: flex;
     align-items: center;
     margin-top: 30px;
-    .dropdown-item{
-      img{
-          width: 35px;
+    .dropdown-item {
+      img {
+        width: 35px;
       }
     }
     .button1 {
@@ -50,7 +50,6 @@
     ul img {
       width: 25px;
       height: 25px;
-      border-radius: 50%;
       position: relative;
       left: 10px;
     }
@@ -95,7 +94,6 @@
 
   .icons {
     float: right;
-    
 
     .basket {
       background-color: #ff5722;
@@ -173,7 +171,7 @@
   }
 }
 
-  #nav-area {
+#nav-area {
   background-color: #283593;
 
   .my-container {
@@ -463,86 +461,52 @@
   }
 }
 
-#singup {
-  display: flex;
+#profil {
   position: relative;
-
-  .img {
-    padding-left: 100px;
+  display: flex;
+  .person {
     img {
-      border-radius: 10px;
-      width: 600px;
-      height: 600px;
-      
+      border-radius: 50%;
+      height: 65px;
     }
-  }
-  .register {
-    padding-top: 20px;
-    box-shadow: 1px 1px gray;
-    border-radius: 5px;
-    position: absolute;
-    top: 80px;
-    right: 300px;
-    width: 600px;
-    height: 500px;
-    background-color: white;
-    p{
-      margin-top: 25px;
-      a{
+    .name {
+      position: absolute;
+      top: 50px;
+      left: 200px;
+    }
+    .icon {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      font-size: 20px;
+      padding-left: 50px;
+      height: 450px;
+      i {
+        padding-top: 30px;
+        cursor: pointer;
+      }
+      a {
         text-decoration: none;
         color: #000;
-        &:hover {
-          color:#ff5722;
-        }
       }
     }
-    
-    button{
-      margin-top: 25px;
-      background-color: #ff5722 !important;
+  }
+  .info {
+    position: relative;
+    top: 65px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 450px;
+    h2 {
+      padding-left: 30px;
     }
-    .input {
-      label {
-        margin-left: 10px;
-        margin-top: 15px;
-        position: relative;
-        display: inline-block;
-
-        span {
-          padding: 10px;
-          pointer-events: none;
-          position: absolute;
-          left: 0;
-          top: 0;
-          transition: 0.2s;
-          transition-timing-function: ease;
-          transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-          opacity: 0.5;
-        }
-
-        input {
-          border: none;
-          border-bottom: 1px gray solid;
-          outline: none;
-          padding: 10px;
-          
-        }
-
-        input:focus + span,
-        input:not(:placeholder-shown) + span {
-          opacity: 1;
-          transform: scale(0.75) translateY(-100%) translateX(-30px);
-        }
-
-        /* For IE Browsers*/
-        input:focus + span,
-        input:not(:-ms-input-placeholder) + span {
-          opacity: 1;
-          transform: scale(0.75) translateY(-100%) translateX(-30px);
-        }
-      }
+    .text {
       display: flex;
-      flex-direction: column;
+      ul {
+        list-style: none;
+      }
+    }
+    button {
+        margin-left: 30px;
+        width: 80px;
+        background-color: #ff5722 !important;
     }
   }
 }
