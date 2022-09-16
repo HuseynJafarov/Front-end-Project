@@ -403,6 +403,7 @@
   width: 100%;
 }
 #images .images {
+  background-size: 100%;
   background-image: url("../../images/register/contact.jpg");
   width: 100%;
   height: 400px;
@@ -414,31 +415,152 @@
   font-size: 55px;
 }
 
-#contact .contact-info {
-  padding-left: 10px;
+#info .my-container {
+  width: 96%;
+  margin: auto;
 }
-#contact .contact-info a {
-  text-decoration: none;
-  color: black;
+#info .my-container h1 {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 50px;
 }
-#contact .contact-info a:hover {
-  color: #ff5722;
+#info .my-container h4 {
+  padding-top: 20px;
+  font-weight: 700;
 }
-#contact .input {
+#info .my-container p {
+  padding-top: 20px;
+}
+#info .my-container .btn-1 {
+  background-color: #ff5722;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+  border: none;
+  width: 150px;
+  height: 50px;
+  color: white;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+#mision {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f3f3f4;
+}
+#mision .my-container {
+  margin: auto;
+  width: 95%;
+}
+#mision .my-container .text {
+  padding-top: 70px;
+  height: 500px;
+}
+#mision .my-container .text h1 {
+  font-weight: 700;
+}
+#mision .my-container .text h5 {
+  padding-top: 10px;
+}
+#mision .my-container .text p {
+  padding-top: 10px;
+}
+
+#words {
+  height: 600px;
+  background-size: 125%;
+  background-image: url(../../images/about/background.jpg);
+  background-position: 2%;
+}
+#words .text {
+  color: white;
+  text-align: center;
+  padding-top: 80px;
+}
+#words .carousell-section {
+  width: 800px;
+  height: 480px;
+  margin-top: 10px;
+  color: white;
+}
+#words .swiper-slide {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-align: center;
+}
+#words .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+}
+#words .swiper-button-next {
+  right: 4% !important;
+  top: 46% !important;
+}
+#words .swiper-button-prev {
+  left: 4% !important;
+  top: 46% !important;
+}
+#words .carousell-section {
+  padding-top: 70px;
+  position: relative;
+}
+#words .component-section {
+  padding: 50px;
+}
+#words .component-row {
+  display: flex;
+  justify-content: space-between;
+}
+#words .component-card {
+  position: relative;
+  width: 31.5%;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2) !important;
+}
+#words .component-card .component-text {
+  padding-left: 90px;
+}
+
+#ceo-info {
+  background-color: #f3f3f4;
+  height: 600px;
+}
+#ceo-info h1 {
+  text-align: center;
+  font-weight: 600;
+}
+#ceo-info .swiper-slide {
+  text-align: center;
+}
+#ceo-info .swiper-slide img {
+  border-radius: 50%;
+}
+
+#write-us .input {
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
 }
-#contact .input h1 {
+#write-us .input h1 {
   padding-left: 10px;
 }
-#contact .input label {
+#write-us .input label {
   margin-left: 10px;
   margin-top: 15px;
   position: relative;
   display: inline-block;
   /* For IE Browsers*/
 }
-#contact .input label span {
+#write-us .input label span {
   padding: 10px;
   pointer-events: none;
   position: absolute;
@@ -449,37 +571,38 @@
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   opacity: 0.5;
 }
-#contact .input label input {
+#write-us .input label input {
   border: none;
   border-bottom: 1px gray solid;
   outline: none;
   padding: 10px;
 }
-#contact .input label input:not(:-moz-placeholder-shown) + span {
+#write-us .input label input:not(:-moz-placeholder-shown) + span {
   opacity: 1;
   transform: scale(0.75) translateY(-100%) translateX(-30px);
 }
-#contact .input label input:not(:-ms-input-placeholder) + span {
+#write-us .input label input:not(:-ms-input-placeholder) + span {
   opacity: 1;
   transform: scale(0.75) translateY(-100%) translateX(-30px);
 }
-#contact .input label input:focus + span,
-#contact .input label input:not(:placeholder-shown) + span {
+#write-us .input label input:focus + span,
+#write-us .input label input:not(:placeholder-shown) + span {
   opacity: 1;
   transform: scale(0.75) translateY(-100%) translateX(-30px);
 }
-#contact .input label input:focus + span,
-#contact .input label input:not(:-ms-input-placeholder) + span {
+#write-us .input label input:focus + span,
+#write-us .input label input:not(:-ms-input-placeholder) + span {
   opacity: 1;
   transform: scale(0.75) translateY(-100%) translateX(-30px);
 }
-#contact button {
+#write-us button {
   margin-left: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 25px;
+  font-weight: 600;
   width: 150px;
-  height: 50px;
   border: none;
+  height: 50px;
   background-color: #ff5722 !important;
 }
 
@@ -506,4 +629,4 @@
 #site-about span {
   float: right;
   color: white;
-}/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=aboutUs.css.map */
