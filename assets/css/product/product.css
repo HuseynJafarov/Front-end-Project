@@ -1,0 +1,639 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.my-container {
+  width: 95%;
+  position: relative;
+}
+
+#top-side {
+  width: 100%;
+  height: 100px;
+  background-color: #333f98;
+}
+#top-side .container-fluid {
+  width: 95%;
+}
+#top-side .language {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+#top-side .language .dropdown-item img {
+  width: 35px;
+}
+#top-side .language .button1 {
+  border-radius: 0px;
+  background-color: #333f98;
+  border: 0px;
+}
+#top-side .country {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+#top-side .country .button2 {
+  border-radius: 0px;
+  background-color: #333f98;
+  border: 0px;
+}
+#top-side .country ul img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: 10px;
+}
+#top-side .country ul li {
+  margin: 6px;
+}
+#top-side .country .usa-flex {
+  display: flex;
+}
+#top-side .country .nzd-flex {
+  display: flex;
+}
+#top-side .country .gmd-flex {
+  display: flex;
+}
+#top-side .country .ilr-flex {
+  display: flex;
+}
+#top-side .country .eur-flex {
+  display: flex;
+}
+#top-side .country .inr-flex {
+  display: flex;
+}
+#top-side .logo {
+  display: flex;
+  justify-content: center;
+}
+#top-side .logo img {
+  margin-top: 36px;
+}
+#top-side .icons {
+  float: right;
+}
+#top-side .icons .basket {
+  background-color: #ff5722;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+#top-side .icons .basket i {
+  color: white;
+  margin-left: 10px;
+}
+#top-side .icons .heart {
+  background-color: #ff5722;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+#top-side .icons .heart i {
+  margin-left: 12px;
+  color: white;
+}
+#top-side .icons .profile {
+  margin-top: 23px;
+}
+#top-side .icons .profile .button3 {
+  background-color: #333f98;
+  border: 0px;
+}
+#top-side .icons .profile img {
+  border-radius: 50%;
+  width: 45px;
+  height: 42px;
+  position: relative;
+  left: 2px;
+}
+#top-side .icons .profile .profile-i {
+  display: flex;
+}
+#top-side .icons .profile .account-i {
+  display: flex;
+}
+#top-side .icons .profile .message-i {
+  display: flex;
+}
+#top-side .icons .profile .logout-i {
+  display: flex;
+}
+#top-side .icons .profile i {
+  position: relative;
+  left: 10px;
+  top: 8px;
+  font-size: 20px;
+}
+
+#nav-area {
+  background-color: #283593;
+}
+#nav-area .my-container {
+  width: 95%;
+  margin: auto;
+}
+#nav-area .my-container nav {
+  display: flex;
+  justify-content: center;
+}
+#nav-area .my-container .btn-navbar {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+#nav-area .my-container .btn-navbar .admin {
+  background-color: #ff5722;
+  width: 115px;
+  height: 45px;
+  padding-top: 10px;
+}
+#nav-area .my-container .btn-navbar .admin .admin-nav {
+  color: white;
+  margin-left: 5px;
+  text-decoration: none;
+}
+#nav-area .my-container .btn-navbar li {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  margin-right: 25px;
+}
+#nav-area .my-container .btn-navbar li .nav-a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+#nav-area .my-container .btn-navbar li .nav-a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -10px;
+  left: 0px;
+  background-color: #ff5722;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0, 0);
+  visibility: hidden;
+}
+#nav-area .my-container .btn-navbar li:hover .submenu {
+  height: 200px;
+}
+#nav-area .my-container .btn-navbar li:hover .categori {
+  height: 320px;
+  width: 800px;
+}
+#nav-area .my-container .btn-navbar li:hover a::before {
+  visibility: visible;
+  transform: scale(1, 1);
+}
+#nav-area .my-container .btn-navbar li .submenu {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 150px;
+  line-height: 40px;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+  z-index: 2;
+}
+#nav-area .my-container .btn-navbar li .submenu a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+#nav-area .my-container .btn-navbar li .categori {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 0;
+  line-height: 30px;
+  text-align: left;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.2s;
+  text-align: left;
+  margin-left: -200px;
+  border-radius: 10px;
+  z-index: 2;
+}
+#nav-area .my-container .btn-navbar li .categori table td {
+  border: none;
+}
+#nav-area .my-container .btn-navbar li .categori table th {
+  font-size: 17px;
+  color: #283593;
+}
+#nav-area .my-container .btn-navbar li .categori table th:hover {
+  color: #000;
+}
+#nav-area .my-container .btn-navbar h1 {
+  text-align: center;
+  font-family: satisfy;
+  font-weight: 300;
+}
+#nav-area .icon {
+  width: 56px;
+  height: 56px;
+  background-color: #ff5722;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  right: 0;
+  margin-top: 20px;
+  position: absolute;
+  z-index: 1;
+}
+#nav-area .icon i {
+  color: white;
+}
+
+#scroll-section {
+  background-color: #283593;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  display: block;
+  transition: 0.5s;
+}
+#scroll-section .my-container {
+  width: 97%;
+  height: 50px;
+  background-color: #283593;
+  margin-left: 23px;
+}
+#scroll-section img {
+  padding-top: 8px;
+}
+#scroll-section .inActive {
+  display: none;
+}
+#scroll-section nav {
+  position: absolute;
+  right: 0;
+}
+#scroll-section .btn {
+  display: flex;
+  margin-top: 3px;
+}
+#scroll-section .btn li {
+  list-style: none;
+  margin-right: 15px;
+}
+#scroll-section .btn li:hover .home {
+  height: 130px;
+  width: 200px;
+}
+#scroll-section .btn li:hover .home li {
+  text-align: left;
+}
+#scroll-section .btn li:hover .shop {
+  height: 170px;
+  width: 200px;
+}
+#scroll-section .btn li:hover .categories {
+  height: 270px;
+  width: 1000px;
+}
+#scroll-section .btn li:hover .categories li {
+  text-align: left;
+}
+#scroll-section .btn li:hover a::before {
+  visibility: visible;
+  transform: scale(1, 1);
+}
+#scroll-section .btn li .home {
+  height: 130px;
+  width: 200px;
+}
+#scroll-section .btn li .shop {
+  height: 170px;
+  width: 200px;
+}
+#scroll-section .btn li .categories {
+  position: absolute;
+  right: 0;
+  height: 270px;
+  width: 1000px;
+  display: flex;
+  gap: 150px;
+  text-align: left;
+}
+#scroll-section .btn li .submenu {
+  overflow: hidden;
+  position: absolute;
+  top: 57px;
+  background-color: whitesmoke;
+  height: 0;
+  line-height: 40px;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  border-radius: 5px;
+  z-index: 2;
+}
+#scroll-section .btn li .submenu > li {
+  display: block;
+  text-align: left;
+}
+#scroll-section .btn li .submenu a {
+  color: black;
+  margin-top: 20px;
+  font-size: 16px;
+  text-decoration: none;
+}
+#scroll-section .btn li .submenu a:hover {
+  text-decoration: none;
+}
+#scroll-section .btn li .submenu .product1 {
+  padding-top: 20px;
+}
+#scroll-section .btn li .submenu .product1 h5 {
+  text-align: left;
+}
+#scroll-section .btn li .hov {
+  font-size: 18px;
+  color: white;
+  display: block;
+  padding: 0 7px 0 7px;
+  margin: 0 0 10px;
+  text-decoration: none;
+  position: relative;
+}
+#scroll-section .btn li .hov::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: -20px;
+  left: 0px;
+  background-color: orange;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0, 0);
+  visibility: hidden;
+}
+
+#images .my-container {
+  width: 100%;
+}
+#images .images {
+  background-size: 100%;
+  background-image: url("../../images/register/contact.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  color: white;
+  text-align: center;
+}
+#images .images .text span {
+  font-weight: 700;
+  font-size: 55px;
+}
+
+#mouse-over .my-container {
+  margin: auto;
+  width: 95%;
+}
+#mouse-over .images {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+#mouse-over .images img {
+  width: 98.16px;
+  height: 125.44px;
+}
+#mouse-over .image {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+#mouse-over .image img {
+  width: 100%;
+}
+#mouse-over .span a {
+  text-decoration: none;
+  color: #283593;
+}
+#mouse-over .span a:hover {
+  color: #ff5722;
+}
+#mouse-over .price {
+  font-size: 20px;
+}
+#mouse-over select {
+  width: 230px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+}
+#mouse-over button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+#mouse-over .first {
+  background-color: #ff5722;
+  color: white;
+}
+#mouse-over .second {
+  background-color: white;
+  margin-left: 10px;
+}
+#mouse-over .share {
+  display: flex;
+}
+#mouse-over .share span {
+  margin-top: 5px;
+}
+#mouse-over .share .social {
+  display: flex;
+  gap: 10px;
+  padding-left: 15px;
+}
+#mouse-over .share .social .soc {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  background-color: #283593;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#mouse-over .share .social .soc:hover {
+  background-color: white;
+}
+#mouse-over .share .social .soc:hover i {
+  color: #283593;
+}
+#mouse-over .share .social .soc i {
+  padding-left: 14px;
+  padding-top: 12px;
+  color: white;
+}
+#mouse-over a {
+  color: black;
+}
+#mouse-over .price {
+  color: #ff5722;
+}
+
+#products {
+  background-color: #f3f3f4;
+  height: 900px;
+}
+#products .my-container {
+  position: relative;
+  margin: auto;
+  width: 95%;
+}
+#products .my-container h1 {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+#products .button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: -80px;
+  left: 670px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+#products .product {
+  position: relative;
+  width: 340.46px;
+  height: 450px;
+  border-radius: 5px 5px 0 0;
+  background-color: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+#products .product img {
+  height: 450px;
+  width: 100%;
+  cursor: pointer;
+}
+#products .product i {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
+  color: grey;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#products .product i:hover {
+  color: black;
+}
+#products .product-info {
+  position: relative;
+  width: 340.46px;
+  height: 117px;
+  border-radius: 0 0 5px 5px;
+  background-color: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+#products .product-info h5 {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  color: black;
+  transition: 0.3s;
+}
+#products .product-info h5:hover {
+  color: #ff5722;
+}
+#products .product-info span {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: 20px;
+  color: #ff5722;
+}
+#products .product-info .star-icon {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+#products .product-info .star-icon i {
+  color: gold;
+}
+#products .product-info .shop-icon {
+  position: absolute;
+  right: 20px;
+  top: -35px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  background-color: #ff5722;
+  cursor: pointer;
+}
+#products .product-info .shop-icon:hover {
+  top: -65px;
+  transition: 0.5s;
+}
+#products .product-info .shop-icon i {
+  padding-top: 20px;
+  padding-left: 18px;
+  font-size: 20px;
+  color: white;
+}
+
+#site-about {
+  background-color: black;
+}
+#site-about .my-container {
+  width: 97%;
+  height: 400px;
+  margin: auto;
+  background-color: black;
+}
+#site-about .about p:hover {
+  cursor: pointer;
+  color: orange;
+}
+#site-about h6,
+#site-about p {
+  transition: 0.3s;
+  margin-left: 40px;
+  margin-top: 30px;
+  color: white;
+}
+#site-about span {
+  float: right;
+  color: white;
+}/*# sourceMappingURL=product.css.map */
