@@ -100,73 +100,90 @@
       border-radius: 50%;
       width: 40px;
       height: 40px;
+      margin-top: 30px;
       position: relative;
       display: flex;
       align-items: center;
-      margin-top: 30px;
-      margin-left: 10px;
 
       i {
         color: white;
-        margin-left: 10px;
+        position: absolute;
+        top: 14px;
+        left: 9px;
       }
-    }
-
-    .heart {
-      background-color: #ff5722;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      margin-top: 30px;
-      margin-left: 10px;
-
-      i {
-        margin-left: 12px;
-        color: white;
-      }
-    }
-
-    .profile {
-      margin-top: 23px;
-
-      .button3 {
-        background-color: #333f98;
-        border: 0px;
-      }
-
-      img {
+      .sup {
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
+        position: absolute;
+        top: -3px;
+        right: -5px;
+        background-color: #ff5722;
         border-radius: 50%;
-        width: 45px;
-        height: 42px;
-        position: relative;
-        left: 2px;
-      }
+        color: white;
+        padding-top: 3px;
 
-      .profile-i {
-        display: flex;
+        sup {
+          margin-left: 3px;
+        }
       }
+    }
+  }
 
-      .account-i {
-        display: flex;
-      }
+  .heart {
+    background-color: #ff5722;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 10px;
 
-      .message-i {
-        display: flex;
-      }
+    i {
+      margin-left: 12px;
+      color: white;
+    }
+  }
 
-      .logout-i {
-        display: flex;
-      }
+  .profile {
+    margin-top: 23px;
 
-      i {
-        position: relative;
-        left: 10px;
-        top: 8px;
-        font-size: 20px;
-      }
+    .button3 {
+      background-color: #333f98;
+      border: 0px;
+    }
+
+    img {
+      border-radius: 50%;
+      width: 45px;
+      height: 42px;
+      position: relative;
+      left: 2px;
+    }
+
+    .profile-i {
+      display: flex;
+    }
+
+    .account-i {
+      display: flex;
+    }
+
+    .message-i {
+      display: flex;
+    }
+
+    .logout-i {
+      display: flex;
+    }
+
+    i {
+      position: relative;
+      left: 10px;
+      top: 8px;
+      font-size: 20px;
     }
   }
 }
@@ -509,7 +526,7 @@
   }
   .num {
     cursor: pointer;
-    background: rgba(0,0,0,.4);
+    background: rgba(0, 0, 0, 0.4);
     border-radius: 2px;
     color: white;
     padding: 0 8px;
@@ -594,7 +611,7 @@
           font-size: 0.8rem;
           height: 2rem;
           margin-left: 0.9375rem;
-          &:hover{
+          &:hover {
             background-color: #283593;
             border: #283593;
           }
@@ -602,27 +619,27 @@
       }
     }
   }
-  .rating-menu{
+  .rating-menu {
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     padding-left: 15px;
     height: 350px;
     padding-top: 10px;
-    .line{
+    .line {
       padding-top: 25px;
     }
   }
-  .clear-filter{
+  .clear-filter {
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     padding-left: 15px;
     height: 100px;
     padding-top: 5px;
-    button{
+    button {
       font-weight: 500;
     }
   }
-  .product{
+  .product {
     position: relative;
     margin-top: 35px;
     width: 340.46px;
@@ -630,12 +647,12 @@
     border-radius: 5px 5px 0 0;
     background-color: white;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-    img{
+    img {
       padding-left: 55px;
       padding-top: 50px;
       cursor: pointer;
     }
-    i{
+    i {
       position: absolute;
       right: 20px;
       top: 20px;
@@ -643,44 +660,44 @@
       color: grey;
       transition: 0.3s;
       cursor: pointer;
-      &:hover{
+      &:hover {
         color: black;
       }
     }
   }
-  .product-info{
+  .product-info {
     position: relative;
     width: 340.46px;
     height: 117px;
-    border-radius:0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
     background-color: white;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-    h5{
+    h5 {
       position: absolute;
       top: 30px;
       left: 20px;
       color: black;
       transition: 0.3s;
-      &:hover{
-        color: #FF5722;
+      &:hover {
+        color: #ff5722;
       }
     }
-    span{
+    span {
       position: absolute;
       bottom: 15px;
       left: 20px;
       font-size: 20px;
-      color: #FF5722;
+      color: #ff5722;
     }
-    .star-icon{
+    .star-icon {
       position: absolute;
       bottom: 15px;
       right: 20px;
-      i{
+      i {
         color: gold;
       }
     }
-    .shop-icon{
+    .shop-icon {
       position: absolute;
       right: 20px;
       top: -35px;
@@ -690,7 +707,7 @@
       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
       background-color: #ff5722;
       cursor: pointer;
-      i{
+      i {
         padding-top: 20px;
         padding-left: 18px;
         font-size: 20px;
@@ -698,7 +715,7 @@
       }
     }
   }
-  .product-1{
+  .product-1 {
     position: relative;
     margin-top: 69px;
     width: 340.46px;
@@ -706,12 +723,12 @@
     border-radius: 5px 5px 0 0;
     background-color: white;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-    img{
+    img {
       padding-left: 55px;
       padding-top: 50px;
       cursor: pointer;
     }
-    i{
+    i {
       position: absolute;
       right: 20px;
       top: 20px;
@@ -719,44 +736,44 @@
       color: grey;
       transition: 0.3s;
       cursor: pointer;
-      &:hover{
+      &:hover {
         color: black;
       }
     }
   }
-  .product-info-1{
+  .product-info-1 {
     position: relative;
     width: 340.46px;
     height: 117px;
-    border-radius:0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
     background-color: white;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-    h5{
+    h5 {
       position: absolute;
       top: 30px;
       left: 20px;
       color: black;
       transition: 0.3s;
-      &:hover{
-        color: #FF5722;
+      &:hover {
+        color: #ff5722;
       }
     }
-    span{
+    span {
       position: absolute;
       bottom: 15px;
       left: 20px;
       font-size: 20px;
-      color: #FF5722;
+      color: #ff5722;
     }
-    .star-icon{
+    .star-icon {
       position: absolute;
       bottom: 15px;
       right: 20px;
-      i{
+      i {
         color: gold;
       }
     }
-    .shop-icon{
+    .shop-icon {
       position: absolute;
       right: 20px;
       top: -35px;
@@ -766,7 +783,7 @@
       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
       background-color: #ff5722;
       cursor: pointer;
-      i{
+      i {
         padding-top: 20px;
         padding-left: 18px;
         font-size: 20px;
@@ -774,7 +791,7 @@
       }
     }
   }
-  .select{
+  .select {
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     height: 35px;
@@ -783,34 +800,34 @@
     outline: none;
     cursor: pointer;
   }
-  .right{
+  .right {
     padding-top: 15px;
-    h6{
+    h6 {
       text-align: end;
     }
   }
-  .pages-nums{
-    .first{
-      background-color: #FF5722;
+  .pages-nums {
+    .first {
+      background-color: #ff5722;
       border-radius: 5px;
       color: white;
     }
-    span{
+    span {
       font-size: 20px;
       padding-left: 10px;
       padding-right: 10px;
       cursor: pointer;
-      &:hover{
+      &:hover {
         border-radius: 5px;
-        background-color:gray ;
+        background-color: gray;
       }
     }
-    .i-left{
+    .i-left {
       color: gray;
       padding-left: 10px;
       cursor: no-drop;
     }
-    .i-right{
+    .i-right {
       color: #000;
       padding-left: 10px;
       cursor: pointer;

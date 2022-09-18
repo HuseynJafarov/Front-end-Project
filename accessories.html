@@ -73,6 +73,9 @@
                         <div class="icons d-flex">
                             <div class="basket">
                                 <i class="fa-solid fa-cart-shopping"></i>
+                                <div class="sup">
+                                    <sup>0</sup>
+                                </div>
                             </div>
                             <div class="heart">
                                 <i class="fa-solid fa-heart"></i>
@@ -347,7 +350,7 @@
                             <label for="age3">Above $500</label><br>
                             <input type="radio" id="age3" name="age" value="100">
                             <label for="age3">All</label>
-                            <div class="input-num my-3" >
+                            <div class="input-num my-3">
                                 <h4>Enter Price Range</h4>
                                 <div class="input">
                                     <input type="number" id="quantity" name="quantity" min="1" placeholder="1">
@@ -399,87 +402,106 @@
                                 <i class="fa-regular fa-star"></i>
                                 <span class="num">18046</span>
                             </div>
-                        </div>  
+                        </div>
                         <div class="clear-filter my-5">
                             <button type="button" class="btn btn-danger my-3">Clear filters</button>
                         </div>
                     </div>
                     <div class="col-3">
-                          <select class="select" name="select" id="cars">
+                        <select class="select" name="select" id="cars">
                             <option value="fatured">Fatured</option>
                             <option value="lowest">Lowest Price</option>
                             <option value="highest">Highest Price</option>
-                          </select>
-                        <div class="product">
-                            <i class="fa-solid fa-heart"></i>
-                            <img src="./assets/images/accessories/1.webp" alt="" />
-                          </div>
-                          <div class="product-info">
-                            <a href=""><h5>Google - Chromecast - Black</h5></a>
-                            <div class="shop-icon">
-                              <i class="fa-solid fa-cart-shopping"></i>
+                        </select>
+                        <div data-id="1" class="one-cart">
+                            <div  class="product">
+                                <i class="fa-solid fa-heart"></i>
+                                <img src="./assets/images/accessories/1.webp" alt="" />
                             </div>
-                            <span>$ 35</span>
-                            <div class="star-icon">
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star-half-stroke"></i>
-                              <i class="fa-regular fa-star"></i>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5>Google - Chromecast - Black</h5>
+                                </a>
+                                <div class="shop-icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <span>$ 35</span>
+                                <div class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
                             </div>
-                          </div><div class="product">
+                        </div>
+                       <div data-id="2" class="one-cart">
+                        <div  class="product">
                             <i class="fa-solid fa-heart"></i>
                             <img src="./assets/images/accessories/2.webp" alt="" />
-                          </div>
-                          <div class="product-info">
-                            <a href=""><h5>Apple - MacBook Air® (Latest...</h5></a>
+                        </div>
+                        <div  class="product-info">
+                            <a href="">
+                                <h5>Apple - MacBook Air® (Latest...</h5>
+                            </a>
                             <div class="shop-icon">
-                              <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
                             </div>
                             <span>$ 999.99</span>
                             <div class="star-icon">
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star-half-stroke"></i>
-                              <i class="fa-regular fa-star"></i>
-                            </div>
-                          </div>
-                          <div class="product">
-                            <i class="fa-solid fa-heart"></i>
-                            <img src="./assets/images/accessories/3.webp" alt="" />
-                          </div>
-                          <div class="product-info">
-                            <a href=""><h5>Apple - EarPods™ With Remote And...</h5></a>
-                            <div class="shop-icon">
-                              <i class="fa-solid fa-cart-shopping"></i>
-                            </div>
-                            <span>$ 29.99</span>
-                            <div class="star-icon">
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star-half-stroke"></i>
-                              <i class="fa-regular fa-star"></i>
-                            </div>
-                          </div><div class="product">
-                            <i class="fa-solid fa-heart"></i>
-                            <img src="./assets/images/accessories/4.webp" alt="" />
-                          </div>
-                          <div class="product-info">
-                            <a href=""><h5>Rocketfish™ - Tilting TV Wall Mou...</h5></a>
-                            <div class="shop-icon">
-                              <i class="fa-solid fa-cart-shopping"></i>
-                            </div>
-                            <span>$ 99.99</span>
-                            <div class="star-icon">
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star-half-stroke"></i>
-                              <i class="fa-regular fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
                             </div>
                         </div>
+                       </div>
+                        <div data-id="3" class="one-cart">
+                            <div class="product">
+                                <i class="fa-solid fa-heart"></i>
+                                <img src="./assets/images/accessories/3.webp" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5>Apple - EarPods™ With Remote And...</h5>
+                                </a>
+                                <div class="shop-icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <span>$ 29.99</span>
+                                <div class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-id="4" class="one-cart">
+                            <div class="product">
+                                <i class="fa-solid fa-heart"></i>
+                                <img src="./assets/images/accessories/4.webp" alt="" />
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h5>Rocketfish™ - Tilting TV Wall Mou...</h5>
+                                </a>
+                                <div class="shop-icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <span>$ 99.99</span>
+                                <div class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div class="pages-nums my-5">
                             <i class="fa-solid fa-angles-left i-left"></i>
                             <i class="fa-solid fa-angle-left i-left"></i>
@@ -493,152 +515,190 @@
                         </div>
                     </div>
                     <div class="col-3">
-                        <div class="product-1">
-                            <i class="fa-solid fa-heart"></i>
-                            <img src="./assets/images/accessories/5.webp" alt="" />
-                          </div>
-                          <div class="product-info-1">
-                            <a href=""><h5>Dell - Inspiron 15.6" Touch-Scre...</h5></a>
-                            <div class="shop-icon">
-                              <i class="fa-solid fa-cart-shopping"></i>
+                        <div  data-id="5" class="one-cart">
+                            <div class="product-1">
+                                <i class="fa-solid fa-heart"></i>
+                                <img src="./assets/images/accessories/5.webp" alt="" />
                             </div>
-                            <span>$ 499.99</span>
-                            <div class="star-icon">
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star-half-stroke"></i>
-                              <i class="fa-regular fa-star"></i>
+                            <div class="product-info-1">
+                                <a href="">
+                                    <h5>Dell - Inspiron 15.6" Touch-Scre...</h5>
+                                </a>
+                                <div class="shop-icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <span>$ 499.99</span>
+                                <div class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
                             </div>
-                          </div>
-                          <div class="product">
-                            <i class="fa-solid fa-heart"></i>
-                            <img src="./assets/images/accessories/6.webp" alt="" />
-                          </div>
-                          <div class="product-info">
-                            <a href=""><h5>Dell - Inspiron 15.6" Touch-Scre...</h5></a>
-                            <div class="shop-icon">
-                              <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div data-id="6" class="one-cart">
+                            <div class="product">
+                                <i class="fa-solid fa-heart"></i>
+                                <img src="./assets/images/accessories/6.webp" alt="" />
                             </div>
-                            <span>$ 499.99</span>
-                            <div class="star-icon">
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star-half-stroke"></i>
-                              <i class="fa-regular fa-star"></i>
+                            <div  class="product-info">
+                                <a href="">
+                                    <h5>Dell - Inspiron 15.6" Touch-Scre...</h5>
+                                </a>
+                                <div class="shop-icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <span>$ 499.99</span>
+                                <div class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
                             </div>
-                          </div>
-                          <div class="product">
-                            <i class="fa-solid fa-heart"></i>
-                            <img src="./assets/images/accessories/7.webp" alt="" />
-                          </div>
-                          <div class="product-info">
-                            <a href=""><h5>Dell - Inspiron 15.6" Touch-Scre...</h5></a>
-                            <div class="shop-icon">
-                              <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div data-id="7" class="one-cart">
+                            <div class="product">
+                                <i class="fa-solid fa-heart"></i>
+                                <img src="./assets/images/accessories/7.webp" alt="" />
                             </div>
-                            <span>$ 499.99</span>
-                            <div class="star-icon">
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star-half-stroke"></i>
-                              <i class="fa-regular fa-star"></i>
+                            <div  class="product-info">
+                                <a href="">
+                                    <h5>Dell - Inspiron 15.6" Touch-Scre...</h5>
+                                </a>
+                                <div class="shop-icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <span>$ 499.99</span>
+                                <div class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
                             </div>
-                          </div><div class="product">
-                            <i class="fa-solid fa-heart"></i>
-                            <img src="./assets/images/accessories/8.webp" alt="" />
-                          </div>
-                          <div class="product-info">
-                            <a href=""><h5>Dell - Inspiron 15.6" Touch-Scre...</h5></a>
-                            <div class="shop-icon">
-                              <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div data-id="8" class="one-cart">
+                            <div class="product">
+                                <i class="fa-solid fa-heart"></i>
+                                <img src="./assets/images/accessories/8.webp" alt="" />
                             </div>
-                            <span>$ 499.99</span>
-                            <div class="star-icon">
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star-half-stroke"></i>
-                              <i class="fa-regular fa-star"></i>
+                            <div  class="product-info">
+                                <a href="">
+                                    <h5>Dell - Inspiron 15.6" Touch-Scre...</h5>
+                                </a>
+                                <div class="shop-icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <span>$ 499.99</span>
+                                <div class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
                             </div>
-                          </div>
+                        </div>
+                        
+
                     </div>
                     <div class="col-3">
                         <div class="right">
                             <h6>18.046 results found in 5ms</h6>
                         </div>
-                        <div class="product">
-                            <i class="fa-solid fa-heart"></i>
-                            <img src="./assets/images/accessories/9.webp" alt="" />
-                          </div>
-                          <div class="product-info">
-                            <a href=""><h5>Google - Chromecast - Black</h5></a>
-                            <div class="shop-icon">
-                              <i class="fa-solid fa-cart-shopping"></i>
+                        <div data-id="9" class="one-cart">
+                            <div  class="product">
+                                <i class="fa-solid fa-heart"></i>
+                                <img src="./assets/images/accessories/9.webp" alt="" />
                             </div>
-                            <span>$ 35</span>
-                            <div class="star-icon">
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star-half-stroke"></i>
-                              <i class="fa-regular fa-star"></i>
+                            <div  class="product-info">
+                                <a href="">
+                                    <h5>Google - Chromecast - Black</h5>
+                                </a>
+                                <div class="shop-icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <span>$ 35</span>
+                                <div class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
                             </div>
-                          </div><div class="product">
-                            <i class="fa-solid fa-heart"></i>
-                            <img src="./assets/images/accessories/10.webp" alt="" />
-                          </div>
-                          <div class="product-info">
-                            <a href=""><h5>Apple - MacBook Air® (Latest...</h5></a>
-                            <div class="shop-icon">
-                              <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div data-id="10" class="one-cart">
+                            <div class="product">
+                                <i class="fa-solid fa-heart"></i>
+                                <img src="./assets/images/accessories/10.webp" alt="" />
                             </div>
-                            <span>$ 999.99</span>
-                            <div class="star-icon">
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star-half-stroke"></i>
-                              <i class="fa-regular fa-star"></i>
+                            <div  class="product-info">
+                                <a href="">
+                                    <h5>Apple - MacBook Air® (Latest...</h5>
+                                </a>
+                                <div class="shop-icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <span>$ 999.99</span>
+                                <div class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
                             </div>
-                          </div>
-                          <div class="product">
-                            <i class="fa-solid fa-heart"></i>
-                            <img src="./assets/images/accessories/11.webp" alt="" />
-                          </div>
-                          <div class="product-info">
-                            <a href=""><h5>Apple - EarPods™ With Remote And...</h5></a>
-                            <div class="shop-icon">
-                              <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div data-id="11" class="one-cart">
+                            <div class="product">
+                                <i class="fa-solid fa-heart"></i>
+                                <img src="./assets/images/accessories/11.webp" alt="" />
                             </div>
-                            <span>$ 29.99</span>
-                            <div class="star-icon">
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star-half-stroke"></i>
-                              <i class="fa-regular fa-star"></i>
+                            <div  class="product-info">
+                                <a href="">
+                                    <h5>Apple - EarPods™ With Remote And...</h5>
+                                </a>
+                                <div class="shop-icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <span>$ 29.99</span>
+                                <div class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
                             </div>
-                          </div><div class="product">
-                            <i class="fa-solid fa-heart"></i>
-                            <img src="./assets/images/accessories/12.webp" alt="" />
-                          </div>
-                          <div class="product-info">
-                            <a href=""><h5>Rocketfish™ - Tilting TV Wall Mou...</h5></a>
-                            <div class="shop-icon">
-                              <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div data-id="12" class="one-cart">
+                            <div class="product">
+                                <i class="fa-solid fa-heart"></i>
+                                <img src="./assets/images/accessories/12.webp" alt="" />
                             </div>
-                            <span>$ 99.99</span>
-                            <div class="star-icon">
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star-half-stroke"></i>
-                              <i class="fa-regular fa-star"></i>
+                            <div  class="product-info">
+                                <a href="">
+                                    <h5>Rocketfish™ - Tilting TV Wall Mou...</h5>
+                                </a>
+                                <div class="shop-icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <span>$ 99.99</span>
+                                <div class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
                             </div>
-                          </div>
+                        </div>
+                        
                     </div>
 
                 </div>

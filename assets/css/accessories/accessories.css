@@ -84,17 +84,33 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  margin-top: 30px;
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: 30px;
-  margin-left: 10px;
 }
 #top-side .icons .basket i {
   color: white;
-  margin-left: 10px;
+  position: absolute;
+  top: 14px;
+  left: 9px;
 }
-#top-side .icons .heart {
+#top-side .icons .basket .sup {
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  background-color: #ff5722;
+  border-radius: 50%;
+  color: white;
+  padding-top: 3px;
+}
+#top-side .icons .basket .sup sup {
+  margin-left: 3px;
+}
+#top-side .heart {
   background-color: #ff5722;
   border-radius: 50%;
   width: 40px;
@@ -105,37 +121,37 @@
   margin-top: 30px;
   margin-left: 10px;
 }
-#top-side .icons .heart i {
+#top-side .heart i {
   margin-left: 12px;
   color: white;
 }
-#top-side .icons .profile {
+#top-side .profile {
   margin-top: 23px;
 }
-#top-side .icons .profile .button3 {
+#top-side .profile .button3 {
   background-color: #333f98;
   border: 0px;
 }
-#top-side .icons .profile img {
+#top-side .profile img {
   border-radius: 50%;
   width: 45px;
   height: 42px;
   position: relative;
   left: 2px;
 }
-#top-side .icons .profile .profile-i {
+#top-side .profile .profile-i {
   display: flex;
 }
-#top-side .icons .profile .account-i {
+#top-side .profile .account-i {
   display: flex;
 }
-#top-side .icons .profile .message-i {
+#top-side .profile .message-i {
   display: flex;
 }
-#top-side .icons .profile .logout-i {
+#top-side .profile .logout-i {
   display: flex;
 }
-#top-side .icons .profile i {
+#top-side .profile i {
   position: relative;
   left: 10px;
   top: 8px;
@@ -594,14 +610,14 @@
   transition: 0.3s;
 }
 #accessories .product-info h5:hover {
-  color: #FF5722;
+  color: #ff5722;
 }
 #accessories .product-info span {
   position: absolute;
   bottom: 15px;
   left: 20px;
   font-size: 20px;
-  color: #FF5722;
+  color: #ff5722;
 }
 #accessories .product-info .star-icon {
   position: absolute;
@@ -670,14 +686,14 @@
   transition: 0.3s;
 }
 #accessories .product-info-1 h5:hover {
-  color: #FF5722;
+  color: #ff5722;
 }
 #accessories .product-info-1 span {
   position: absolute;
   bottom: 15px;
   left: 20px;
   font-size: 20px;
-  color: #FF5722;
+  color: #ff5722;
 }
 #accessories .product-info-1 .star-icon {
   position: absolute;
@@ -720,7 +736,7 @@
   text-align: end;
 }
 #accessories .pages-nums .first {
-  background-color: #FF5722;
+  background-color: #ff5722;
   border-radius: 5px;
   color: white;
 }
