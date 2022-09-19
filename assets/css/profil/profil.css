@@ -84,15 +84,32 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  margin-top: 30px;
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: 30px;
-  margin-left: 10px;
 }
 #top-side .icons .basket i {
   color: white;
-  margin-left: 10px;
+  position: absolute;
+  top: 14px;
+  left: 9px;
+}
+#top-side .icons .basket .sup {
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  background-color: #ff5722;
+  border-radius: 50%;
+  color: white;
+  padding-top: 3px;
+}
+#top-side .icons .basket .sup sup {
+  font-size: 13px;
+  margin-left: 5px;
 }
 #top-side .icons .heart {
   background-color: #ff5722;
